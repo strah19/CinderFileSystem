@@ -1,0 +1,161 @@
+\hypertarget{class_cinder_1_1_cinder_structure}{}\doxysection{Cinder\+::Cinder\+Structure Class Reference}
+\label{class_cinder_1_1_cinder_structure}\index{Cinder::CinderStructure@{Cinder::CinderStructure}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_cinder_1_1_cinder_structure_ab59e743019af06bc907ba0cae4cce251}{Load\+Cinder\+Structure}} (const Cinder\+Type \&file\+\_\+path)
+\item 
+void \mbox{\hyperlink{class_cinder_1_1_cinder_structure_a25cd9dbfdd6d88018e134fb96d6220c1}{Log}} ()
+\item 
+void \mbox{\hyperlink{class_cinder_1_1_cinder_structure_a012e4faaa6632ece0764ba8a94bc1e91}{Write\+Section}} (const Cinder\+Type \&section\+\_\+name)
+\item 
+size\+\_\+t \mbox{\hyperlink{class_cinder_1_1_cinder_structure_aad4d1e2f78c024d105c21c1291621d83}{Check\+If\+Section\+Exists}} (const Cinder\+Type \&section\+\_\+name)
+\item 
+Cinder\+Type \mbox{\hyperlink{class_cinder_1_1_cinder_structure_a3d8d42143b6fe7fbc0befc2d654c8c35}{Check\+If\+Key\+Exists}} (size\+\_\+t section\+\_\+index, const Cinder\+Type \&key)
+\item 
+void \mbox{\hyperlink{class_cinder_1_1_cinder_structure_ab54a5f450997ee9bf10620ea8e35207e}{Write\+Key\+Value\+To\+Section}} (const Cinder\+Type \&section\+\_\+name, const Cinder\+Type \&key, const Cinder\+Type \&value)
+\item 
+void \mbox{\hyperlink{class_cinder_1_1_cinder_structure_a9c368cb3e56565bc6704fc692dac13b8}{Delete\+Section}} (const Cinder\+Type \&section\+\_\+name)
+\item 
+void \mbox{\hyperlink{class_cinder_1_1_cinder_structure_a8917159a841ba9a842d4a731b59fdcf5}{Delete\+Key}} (const Cinder\+Type \&section\+\_\+name, const Cinder\+Type \&key)
+\item 
+Cinder\+Type \mbox{\hyperlink{class_cinder_1_1_cinder_structure_a66c7966178f0c4cd4f8b8a2c3eebd439}{Get\+Value}} (const Cinder\+Type \&section\+\_\+name, const Cinder\+Type \&key)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cinder_1_1_cinder_structure_a3d8d42143b6fe7fbc0befc2d654c8c35}\label{class_cinder_1_1_cinder_structure_a3d8d42143b6fe7fbc0befc2d654c8c35}} 
+\index{Cinder::CinderStructure@{Cinder::CinderStructure}!CheckIfKeyExists@{CheckIfKeyExists}}
+\index{CheckIfKeyExists@{CheckIfKeyExists}!Cinder::CinderStructure@{Cinder::CinderStructure}}
+\doxysubsubsection{\texorpdfstring{CheckIfKeyExists()}{CheckIfKeyExists()}}
+{\footnotesize\ttfamily Cinder\+Type Cinder\+::\+Cinder\+Structure\+::\+Check\+If\+Key\+Exists (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{section\+\_\+index,  }\item[{const Cinder\+Type \&}]{key }\end{DoxyParamCaption})}
+
+Will go through sections keys and find it\textquotesingle{}s value, otherwise will return \char`\"{}\char`\"{}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em The} & section index. \\
+\hline
+{\em The} & key in the section.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Will return the key if it exists. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cinder_1_1_cinder_structure_aad4d1e2f78c024d105c21c1291621d83}\label{class_cinder_1_1_cinder_structure_aad4d1e2f78c024d105c21c1291621d83}} 
+\index{Cinder::CinderStructure@{Cinder::CinderStructure}!CheckIfSectionExists@{CheckIfSectionExists}}
+\index{CheckIfSectionExists@{CheckIfSectionExists}!Cinder::CinderStructure@{Cinder::CinderStructure}}
+\doxysubsubsection{\texorpdfstring{CheckIfSectionExists()}{CheckIfSectionExists()}}
+{\footnotesize\ttfamily size\+\_\+t Cinder\+::\+Cinder\+Structure\+::\+Check\+If\+Section\+Exists (\begin{DoxyParamCaption}\item[{const Cinder\+Type \&}]{section\+\_\+name }\end{DoxyParamCaption})}
+
+Will return the section\+\_\+index if it exists, otherwise it returns -\/1.
+
+
+\begin{DoxyParams}{Parameters}
+{\em The} & section name to find.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The section index. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cinder_1_1_cinder_structure_a8917159a841ba9a842d4a731b59fdcf5}\label{class_cinder_1_1_cinder_structure_a8917159a841ba9a842d4a731b59fdcf5}} 
+\index{Cinder::CinderStructure@{Cinder::CinderStructure}!DeleteKey@{DeleteKey}}
+\index{DeleteKey@{DeleteKey}!Cinder::CinderStructure@{Cinder::CinderStructure}}
+\doxysubsubsection{\texorpdfstring{DeleteKey()}{DeleteKey()}}
+{\footnotesize\ttfamily void Cinder\+::\+Cinder\+Structure\+::\+Delete\+Key (\begin{DoxyParamCaption}\item[{const Cinder\+Type \&}]{section\+\_\+name,  }\item[{const Cinder\+Type \&}]{key }\end{DoxyParamCaption})}
+
+Will delete a key in a section if it exists.
+
+
+\begin{DoxyParams}{Parameters}
+{\em The} & section name. \\
+\hline
+{\em The} & key to delete in the section. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cinder_1_1_cinder_structure_a9c368cb3e56565bc6704fc692dac13b8}\label{class_cinder_1_1_cinder_structure_a9c368cb3e56565bc6704fc692dac13b8}} 
+\index{Cinder::CinderStructure@{Cinder::CinderStructure}!DeleteSection@{DeleteSection}}
+\index{DeleteSection@{DeleteSection}!Cinder::CinderStructure@{Cinder::CinderStructure}}
+\doxysubsubsection{\texorpdfstring{DeleteSection()}{DeleteSection()}}
+{\footnotesize\ttfamily void Cinder\+::\+Cinder\+Structure\+::\+Delete\+Section (\begin{DoxyParamCaption}\item[{const Cinder\+Type \&}]{section\+\_\+name }\end{DoxyParamCaption})}
+
+Will delete the given section if it exists.
+
+
+\begin{DoxyParams}{Parameters}
+{\em The} & section name. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cinder_1_1_cinder_structure_a66c7966178f0c4cd4f8b8a2c3eebd439}\label{class_cinder_1_1_cinder_structure_a66c7966178f0c4cd4f8b8a2c3eebd439}} 
+\index{Cinder::CinderStructure@{Cinder::CinderStructure}!GetValue@{GetValue}}
+\index{GetValue@{GetValue}!Cinder::CinderStructure@{Cinder::CinderStructure}}
+\doxysubsubsection{\texorpdfstring{GetValue()}{GetValue()}}
+{\footnotesize\ttfamily Cinder\+Type Cinder\+::\+Cinder\+Structure\+::\+Get\+Value (\begin{DoxyParamCaption}\item[{const Cinder\+Type \&}]{section\+\_\+name,  }\item[{const Cinder\+Type \&}]{key }\end{DoxyParamCaption})}
+
+If the key is found in a section, it will return the key\textquotesingle{}s value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em The} & section name. \\
+\hline
+{\em The} & key in the section.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The key\textquotesingle{}s value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cinder_1_1_cinder_structure_ab59e743019af06bc907ba0cae4cce251}\label{class_cinder_1_1_cinder_structure_ab59e743019af06bc907ba0cae4cce251}} 
+\index{Cinder::CinderStructure@{Cinder::CinderStructure}!LoadCinderStructure@{LoadCinderStructure}}
+\index{LoadCinderStructure@{LoadCinderStructure}!Cinder::CinderStructure@{Cinder::CinderStructure}}
+\doxysubsubsection{\texorpdfstring{LoadCinderStructure()}{LoadCinderStructure()}}
+{\footnotesize\ttfamily void Cinder\+::\+Cinder\+Structure\+::\+Load\+Cinder\+Structure (\begin{DoxyParamCaption}\item[{const Cinder\+Type \&}]{file\+\_\+path }\end{DoxyParamCaption})}
+
+Will go through the file and get all the sections and key-\/values to memory.
+
+
+\begin{DoxyParams}{Parameters}
+{\em The} & filepath for the data. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cinder_1_1_cinder_structure_a25cd9dbfdd6d88018e134fb96d6220c1}\label{class_cinder_1_1_cinder_structure_a25cd9dbfdd6d88018e134fb96d6220c1}} 
+\index{Cinder::CinderStructure@{Cinder::CinderStructure}!Log@{Log}}
+\index{Log@{Log}!Cinder::CinderStructure@{Cinder::CinderStructure}}
+\doxysubsubsection{\texorpdfstring{Log()}{Log()}}
+{\footnotesize\ttfamily void Cinder\+::\+Cinder\+Structure\+::\+Log (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Will print the sections and key-\/value info into the console. \mbox{\Hypertarget{class_cinder_1_1_cinder_structure_ab54a5f450997ee9bf10620ea8e35207e}\label{class_cinder_1_1_cinder_structure_ab54a5f450997ee9bf10620ea8e35207e}} 
+\index{Cinder::CinderStructure@{Cinder::CinderStructure}!WriteKeyValueToSection@{WriteKeyValueToSection}}
+\index{WriteKeyValueToSection@{WriteKeyValueToSection}!Cinder::CinderStructure@{Cinder::CinderStructure}}
+\doxysubsubsection{\texorpdfstring{WriteKeyValueToSection()}{WriteKeyValueToSection()}}
+{\footnotesize\ttfamily void Cinder\+::\+Cinder\+Structure\+::\+Write\+Key\+Value\+To\+Section (\begin{DoxyParamCaption}\item[{const Cinder\+Type \&}]{section\+\_\+name,  }\item[{const Cinder\+Type \&}]{key,  }\item[{const Cinder\+Type \&}]{value }\end{DoxyParamCaption})}
+
+Will write a key and value to a section. If it already exists it does nothing to the key but the value can keep being updated.
+
+
+\begin{DoxyParams}{Parameters}
+{\em The} & section name. \\
+\hline
+{\em The} & key that will go into the section. \\
+\hline
+{\em The} & value for the key. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cinder_1_1_cinder_structure_a012e4faaa6632ece0764ba8a94bc1e91}\label{class_cinder_1_1_cinder_structure_a012e4faaa6632ece0764ba8a94bc1e91}} 
+\index{Cinder::CinderStructure@{Cinder::CinderStructure}!WriteSection@{WriteSection}}
+\index{WriteSection@{WriteSection}!Cinder::CinderStructure@{Cinder::CinderStructure}}
+\doxysubsubsection{\texorpdfstring{WriteSection()}{WriteSection()}}
+{\footnotesize\ttfamily void Cinder\+::\+Cinder\+Structure\+::\+Write\+Section (\begin{DoxyParamCaption}\item[{const Cinder\+Type \&}]{section\+\_\+name }\end{DoxyParamCaption})}
+
+Write a new section if a section already doesn\textquotesingle{}t exist.
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & name for the new section. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/stra2/source/repos/\+Cinder\+File\+System/\+Cinder\+File\+System/src/Cinder\+Structure.\+h\item 
+C\+:/\+Users/stra2/source/repos/\+Cinder\+File\+System/\+Cinder\+File\+System/src/Cinder\+Structure.\+cpp\end{DoxyCompactItemize}

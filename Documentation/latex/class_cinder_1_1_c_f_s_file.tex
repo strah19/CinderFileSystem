@@ -1,0 +1,442 @@
+\hypertarget{class_cinder_1_1_c_f_s_file}{}\doxysection{Cinder\+::CFSFile Class Reference}
+\label{class_cinder_1_1_c_f_s_file}\index{Cinder::CFSFile@{Cinder::CFSFile}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cinder_1_1_c_f_s_file_a409c8539e79131290b20efe9627cd693}{CFSFile}} (const char $\ast$file\+\_\+path)
+\item 
+\mbox{\hyperlink{class_cinder_1_1_c_f_s_file_a29e429128ddeae6804af67aa9ef6323b}{CFSFile}} ()
+\item 
+\mbox{\hyperlink{class_cinder_1_1_c_f_s_file_aaec201ad8d7d0af2049bf75f7c73f3f9}{CFSFile}} (\mbox{\hyperlink{class_cinder_1_1_c_f_s_file}{CFSFile}} \&file)
+\item 
+void \mbox{\hyperlink{class_cinder_1_1_c_f_s_file_a862c46a2b928691eea27caf420b3e2c9}{operator=}} (const \mbox{\hyperlink{class_cinder_1_1_c_f_s_file}{CFSFile}} \&file)
+\item 
+virtual \mbox{\hyperlink{class_cinder_1_1_c_f_s_file_a25ed8af619f9e93515cb24a59b4e129c}{$\sim$\+CFSFile}} ()
+\item 
+void \mbox{\hyperlink{class_cinder_1_1_c_f_s_file_ad411404c8e5c37bb97e2ff31f204e3ff}{Empty\+File}} ()
+\item 
+void \mbox{\hyperlink{class_cinder_1_1_c_f_s_file_aa70776277e60c1d9c21a6b3cdf49d4f9}{Close\+File}} ()
+\item 
+void \mbox{\hyperlink{class_cinder_1_1_c_f_s_file_a05d96d5bddddc22663834edef5b5c622}{Destroy}} ()
+\item 
+void \mbox{\hyperlink{class_cinder_1_1_c_f_s_file_a7eda049dd4fdfc285f24a26d5fbd990d}{Open}} ()
+\item 
+bool \mbox{\hyperlink{class_cinder_1_1_c_f_s_file_aaed4db0550ca49012605b5d237a780f1}{Is\+Read\+Location\+To\+End}} ()
+\item 
+std\+::streampos \mbox{\hyperlink{class_cinder_1_1_c_f_s_file_ae99293040fbb04a96d07811b947b86e1}{Get\+Current\+Read\+Location}} ()
+\item 
+void \mbox{\hyperlink{class_cinder_1_1_c_f_s_file_a0593cfbc5d7397442e17d850171dfb04}{Reset\+Read\+Location}} ()
+\item 
+void \mbox{\hyperlink{class_cinder_1_1_c_f_s_file_ac3a5cd674ee181623c8f910fa1d5112b}{Set\+Read\+Location}} (const uint32\+\_\+t read\+\_\+location)
+\item 
+std\+::streamoff \mbox{\hyperlink{class_cinder_1_1_c_f_s_file_a94849426b4204e450f8db408222a33a3}{Get\+File\+Size\+In\+Bytes}} ()
+\item 
+bool \mbox{\hyperlink{class_cinder_1_1_c_f_s_file_a248ff0064897d6c4bbe5e1da3a8e10f8}{Is\+File\+Empty}} ()
+\item 
+const char $\ast$ \mbox{\hyperlink{class_cinder_1_1_c_f_s_file_a5afaf08d309d334acf322d26e0131232}{Get\+Path}} ()
+\item 
+uint64\+\_\+t \mbox{\hyperlink{class_cinder_1_1_c_f_s_file_adf848667c3cb01a21e6a855f4e07f018}{Get\+Line\+Count}} ()
+\item 
+uint64\+\_\+t \mbox{\hyperlink{class_cinder_1_1_c_f_s_file_ac96eaeaf83cbf2a7f88a6e56e0c22fee}{Get\+Character\+Count}} ()
+\item 
+uint64\+\_\+t \mbox{\hyperlink{class_cinder_1_1_c_f_s_file_a8e5dfcc373742d062a68606fa309858e}{Get\+Word\+Count}} ()
+\item 
+std\+::string \mbox{\hyperlink{class_cinder_1_1_c_f_s_file_a9726ddd938ec776fc16c97acf1b0a8a2}{Read\+File}} ()
+\item 
+std\+::string \mbox{\hyperlink{class_cinder_1_1_c_f_s_file_ae4bb6ea4ad0800cf84bff8a2c418d202}{Read\+Line}} (const uint32\+\_\+t line\+\_\+number)
+\item 
+std\+::string \mbox{\hyperlink{class_cinder_1_1_c_f_s_file_a4587b4f1b333c8fc5abd87c880055478}{Read\+Word}} (const uint32\+\_\+t location)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{class_cinder_1_1_c_f_s_file_af8f0f0a29ad2309534afb50b72e6f616}{Get\+First\+Location\+From\+Word}} (const char $\ast$word)
+\item 
+void \mbox{\hyperlink{class_cinder_1_1_c_f_s_file_a8b4c5530b82266760bfe2affd1512abe}{Delete\+Line}} (const uint32\+\_\+t line\+\_\+number)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{class_cinder_1_1_c_f_s_file_afc31f4710d672eb27d8eac4b720f005b}{Read\+Object\+Of\+Size}} (T \&object)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{class_cinder_1_1_c_f_s_file_ac89f7096b84e789cbec95a493b8ae839}{Write\+Object\+Of\+Size}} (T \&object)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{class_cinder_1_1_c_f_s_file_a482b4e12f40880d863686897dd4077b9}{Write\+At\+End\+Line}} (const T \&stream, const uint32\+\_\+t line\+\_\+number)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{class_cinder_1_1_c_f_s_file_ab91409bb29eed6442bf5fee203a57472}{Write\+After\+First\+Word}} (const T \&stream, const std\+::string \&finder\+\_\+word)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{class_cinder_1_1_c_f_s_file_ab5b768391cee47769c834498772eae64}{Write}} (const T \&stream)
+\item 
+void \mbox{\hyperlink{class_cinder_1_1_c_f_s_file_a8f5a03957cc4cf9b124afd78aaa09bfe}{Do\+Each\+Word}} (const std\+::function$<$ bool(std\+::string \&word, const uint32\+\_\+t counter)$>$ \&func)
+\item 
+void \mbox{\hyperlink{class_cinder_1_1_c_f_s_file_a7abc3f5710adc46732e0933d19e20351}{Do\+Each\+Line}} (const std\+::function$<$ bool(std\+::string \&line, const uint32\+\_\+t counter)$>$ \&func)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_cinder_1_1_c_f_s_file_a23ec7ecdcc6fb37f22e79180f224e061}\label{class_cinder_1_1_c_f_s_file_a23ec7ecdcc6fb37f22e79180f224e061}} 
+std\+::string {\bfseries file\+\_\+path}
+\item 
+\mbox{\Hypertarget{class_cinder_1_1_c_f_s_file_ab4579e1c0a20699adc61ce87449d55ed}\label{class_cinder_1_1_c_f_s_file_ab4579e1c0a20699adc61ce87449d55ed}} 
+std\+::fstream {\bfseries file}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_cinder_1_1_c_f_s_file_a409c8539e79131290b20efe9627cd693}\label{class_cinder_1_1_c_f_s_file_a409c8539e79131290b20efe9627cd693}} 
+\index{Cinder::CFSFile@{Cinder::CFSFile}!CFSFile@{CFSFile}}
+\index{CFSFile@{CFSFile}!Cinder::CFSFile@{Cinder::CFSFile}}
+\doxysubsubsection{\texorpdfstring{CFSFile()}{CFSFile()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Cinder\+::\+CFSFile\+::\+CFSFile (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+\_\+path }\end{DoxyParamCaption})}
+
+Basic file input output handler.
+
+
+\begin{DoxyParams}{Parameters}
+{\em The} & path of the desired file. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cinder_1_1_c_f_s_file_a29e429128ddeae6804af67aa9ef6323b}\label{class_cinder_1_1_c_f_s_file_a29e429128ddeae6804af67aa9ef6323b}} 
+\index{Cinder::CFSFile@{Cinder::CFSFile}!CFSFile@{CFSFile}}
+\index{CFSFile@{CFSFile}!Cinder::CFSFile@{Cinder::CFSFile}}
+\doxysubsubsection{\texorpdfstring{CFSFile()}{CFSFile()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Cinder\+::\+CFSFile\+::\+CFSFile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Basic file input output handler. \mbox{\Hypertarget{class_cinder_1_1_c_f_s_file_aaec201ad8d7d0af2049bf75f7c73f3f9}\label{class_cinder_1_1_c_f_s_file_aaec201ad8d7d0af2049bf75f7c73f3f9}} 
+\index{Cinder::CFSFile@{Cinder::CFSFile}!CFSFile@{CFSFile}}
+\index{CFSFile@{CFSFile}!Cinder::CFSFile@{Cinder::CFSFile}}
+\doxysubsubsection{\texorpdfstring{CFSFile()}{CFSFile()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Cinder\+::\+CFSFile\+::\+CFSFile (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cinder_1_1_c_f_s_file}{CFSFile}} \&}]{file }\end{DoxyParamCaption})}
+
+Basic file input output handler.
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & source for the \mbox{\hyperlink{class_cinder_1_1_c_f_s_file}{CFSFile}} to use. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cinder_1_1_c_f_s_file_a25ed8af619f9e93515cb24a59b4e129c}\label{class_cinder_1_1_c_f_s_file_a25ed8af619f9e93515cb24a59b4e129c}} 
+\index{Cinder::CFSFile@{Cinder::CFSFile}!````~CFSFile@{$\sim$CFSFile}}
+\index{````~CFSFile@{$\sim$CFSFile}!Cinder::CFSFile@{Cinder::CFSFile}}
+\doxysubsubsection{\texorpdfstring{$\sim$CFSFile()}{~CFSFile()}}
+{\footnotesize\ttfamily Cinder\+::\+CFSFile\+::$\sim$\+CFSFile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Will close the file automatically. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cinder_1_1_c_f_s_file_aa70776277e60c1d9c21a6b3cdf49d4f9}\label{class_cinder_1_1_c_f_s_file_aa70776277e60c1d9c21a6b3cdf49d4f9}} 
+\index{Cinder::CFSFile@{Cinder::CFSFile}!CloseFile@{CloseFile}}
+\index{CloseFile@{CloseFile}!Cinder::CFSFile@{Cinder::CFSFile}}
+\doxysubsubsection{\texorpdfstring{CloseFile()}{CloseFile()}}
+{\footnotesize\ttfamily void Cinder\+::\+CFSFile\+::\+Close\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Close the file. \mbox{\Hypertarget{class_cinder_1_1_c_f_s_file_a8b4c5530b82266760bfe2affd1512abe}\label{class_cinder_1_1_c_f_s_file_a8b4c5530b82266760bfe2affd1512abe}} 
+\index{Cinder::CFSFile@{Cinder::CFSFile}!DeleteLine@{DeleteLine}}
+\index{DeleteLine@{DeleteLine}!Cinder::CFSFile@{Cinder::CFSFile}}
+\doxysubsubsection{\texorpdfstring{DeleteLine()}{DeleteLine()}}
+{\footnotesize\ttfamily void Cinder\+::\+CFSFile\+::\+Delete\+Line (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{line\+\_\+number }\end{DoxyParamCaption})}
+
+Will delete the desired line.
+
+
+\begin{DoxyParams}{Parameters}
+{\em The} & line number to be deleted. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cinder_1_1_c_f_s_file_a05d96d5bddddc22663834edef5b5c622}\label{class_cinder_1_1_c_f_s_file_a05d96d5bddddc22663834edef5b5c622}} 
+\index{Cinder::CFSFile@{Cinder::CFSFile}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!Cinder::CFSFile@{Cinder::CFSFile}}
+\doxysubsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void Cinder\+::\+CFSFile\+::\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Completely destroy it from the directory. \mbox{\Hypertarget{class_cinder_1_1_c_f_s_file_a7abc3f5710adc46732e0933d19e20351}\label{class_cinder_1_1_c_f_s_file_a7abc3f5710adc46732e0933d19e20351}} 
+\index{Cinder::CFSFile@{Cinder::CFSFile}!DoEachLine@{DoEachLine}}
+\index{DoEachLine@{DoEachLine}!Cinder::CFSFile@{Cinder::CFSFile}}
+\doxysubsubsection{\texorpdfstring{DoEachLine()}{DoEachLine()}}
+{\footnotesize\ttfamily void Cinder\+::\+CFSFile\+::\+Do\+Each\+Line (\begin{DoxyParamCaption}\item[{const std\+::function$<$ bool(std\+::string \&line, const uint32\+\_\+t counter)$>$ \&}]{func }\end{DoxyParamCaption})}
+
+Will cycle through each line and be able to operate on the information passed in.
+
+
+\begin{DoxyParams}{Parameters}
+{\em The} & user lambda that will operate with the given info. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cinder_1_1_c_f_s_file_a8f5a03957cc4cf9b124afd78aaa09bfe}\label{class_cinder_1_1_c_f_s_file_a8f5a03957cc4cf9b124afd78aaa09bfe}} 
+\index{Cinder::CFSFile@{Cinder::CFSFile}!DoEachWord@{DoEachWord}}
+\index{DoEachWord@{DoEachWord}!Cinder::CFSFile@{Cinder::CFSFile}}
+\doxysubsubsection{\texorpdfstring{DoEachWord()}{DoEachWord()}}
+{\footnotesize\ttfamily void Cinder\+::\+CFSFile\+::\+Do\+Each\+Word (\begin{DoxyParamCaption}\item[{const std\+::function$<$ bool(std\+::string \&word, const uint32\+\_\+t counter)$>$ \&}]{func }\end{DoxyParamCaption})}
+
+Will cycle through each word and be able to operate on the information passed in.
+
+
+\begin{DoxyParams}{Parameters}
+{\em The} & user lambda that will operate with the given info. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cinder_1_1_c_f_s_file_ad411404c8e5c37bb97e2ff31f204e3ff}\label{class_cinder_1_1_c_f_s_file_ad411404c8e5c37bb97e2ff31f204e3ff}} 
+\index{Cinder::CFSFile@{Cinder::CFSFile}!EmptyFile@{EmptyFile}}
+\index{EmptyFile@{EmptyFile}!Cinder::CFSFile@{Cinder::CFSFile}}
+\doxysubsubsection{\texorpdfstring{EmptyFile()}{EmptyFile()}}
+{\footnotesize\ttfamily void Cinder\+::\+CFSFile\+::\+Empty\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Delete contents in file. \mbox{\Hypertarget{class_cinder_1_1_c_f_s_file_ac96eaeaf83cbf2a7f88a6e56e0c22fee}\label{class_cinder_1_1_c_f_s_file_ac96eaeaf83cbf2a7f88a6e56e0c22fee}} 
+\index{Cinder::CFSFile@{Cinder::CFSFile}!GetCharacterCount@{GetCharacterCount}}
+\index{GetCharacterCount@{GetCharacterCount}!Cinder::CFSFile@{Cinder::CFSFile}}
+\doxysubsubsection{\texorpdfstring{GetCharacterCount()}{GetCharacterCount()}}
+{\footnotesize\ttfamily uint64\+\_\+t Cinder\+::\+CFSFile\+::\+Get\+Character\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The charcter count of the file.
+
+\begin{DoxyReturn}{Returns}
+The number of charcters. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cinder_1_1_c_f_s_file_ae99293040fbb04a96d07811b947b86e1}\label{class_cinder_1_1_c_f_s_file_ae99293040fbb04a96d07811b947b86e1}} 
+\index{Cinder::CFSFile@{Cinder::CFSFile}!GetCurrentReadLocation@{GetCurrentReadLocation}}
+\index{GetCurrentReadLocation@{GetCurrentReadLocation}!Cinder::CFSFile@{Cinder::CFSFile}}
+\doxysubsubsection{\texorpdfstring{GetCurrentReadLocation()}{GetCurrentReadLocation()}}
+{\footnotesize\ttfamily std\+::streampos Cinder\+::\+CFSFile\+::\+Get\+Current\+Read\+Location (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Give the current read location.
+
+\begin{DoxyReturn}{Returns}
+the read location. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cinder_1_1_c_f_s_file_a94849426b4204e450f8db408222a33a3}\label{class_cinder_1_1_c_f_s_file_a94849426b4204e450f8db408222a33a3}} 
+\index{Cinder::CFSFile@{Cinder::CFSFile}!GetFileSizeInBytes@{GetFileSizeInBytes}}
+\index{GetFileSizeInBytes@{GetFileSizeInBytes}!Cinder::CFSFile@{Cinder::CFSFile}}
+\doxysubsubsection{\texorpdfstring{GetFileSizeInBytes()}{GetFileSizeInBytes()}}
+{\footnotesize\ttfamily std\+::streamoff Cinder\+::\+CFSFile\+::\+Get\+File\+Size\+In\+Bytes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the file in bytes.
+
+\begin{DoxyReturn}{Returns}
+The number of bytes. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cinder_1_1_c_f_s_file_af8f0f0a29ad2309534afb50b72e6f616}\label{class_cinder_1_1_c_f_s_file_af8f0f0a29ad2309534afb50b72e6f616}} 
+\index{Cinder::CFSFile@{Cinder::CFSFile}!GetFirstLocationFromWord@{GetFirstLocationFromWord}}
+\index{GetFirstLocationFromWord@{GetFirstLocationFromWord}!Cinder::CFSFile@{Cinder::CFSFile}}
+\doxysubsubsection{\texorpdfstring{GetFirstLocationFromWord()}{GetFirstLocationFromWord()}}
+{\footnotesize\ttfamily uint32\+\_\+t Cinder\+::\+CFSFile\+::\+Get\+First\+Location\+From\+Word (\begin{DoxyParamCaption}\item[{const char $\ast$}]{word }\end{DoxyParamCaption})}
+
+Will find the position of the first seen word.
+
+
+\begin{DoxyParams}{Parameters}
+{\em The} & word being searched for.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The words location in the file. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cinder_1_1_c_f_s_file_adf848667c3cb01a21e6a855f4e07f018}\label{class_cinder_1_1_c_f_s_file_adf848667c3cb01a21e6a855f4e07f018}} 
+\index{Cinder::CFSFile@{Cinder::CFSFile}!GetLineCount@{GetLineCount}}
+\index{GetLineCount@{GetLineCount}!Cinder::CFSFile@{Cinder::CFSFile}}
+\doxysubsubsection{\texorpdfstring{GetLineCount()}{GetLineCount()}}
+{\footnotesize\ttfamily uint64\+\_\+t Cinder\+::\+CFSFile\+::\+Get\+Line\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The line count of the file.
+
+\begin{DoxyReturn}{Returns}
+The line number. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cinder_1_1_c_f_s_file_a5afaf08d309d334acf322d26e0131232}\label{class_cinder_1_1_c_f_s_file_a5afaf08d309d334acf322d26e0131232}} 
+\index{Cinder::CFSFile@{Cinder::CFSFile}!GetPath@{GetPath}}
+\index{GetPath@{GetPath}!Cinder::CFSFile@{Cinder::CFSFile}}
+\doxysubsubsection{\texorpdfstring{GetPath()}{GetPath()}}
+{\footnotesize\ttfamily const char $\ast$ Cinder\+::\+CFSFile\+::\+Get\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the current working path.
+
+\begin{DoxyReturn}{Returns}
+The path. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cinder_1_1_c_f_s_file_a8e5dfcc373742d062a68606fa309858e}\label{class_cinder_1_1_c_f_s_file_a8e5dfcc373742d062a68606fa309858e}} 
+\index{Cinder::CFSFile@{Cinder::CFSFile}!GetWordCount@{GetWordCount}}
+\index{GetWordCount@{GetWordCount}!Cinder::CFSFile@{Cinder::CFSFile}}
+\doxysubsubsection{\texorpdfstring{GetWordCount()}{GetWordCount()}}
+{\footnotesize\ttfamily uint64\+\_\+t Cinder\+::\+CFSFile\+::\+Get\+Word\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The number of words in a file.
+
+\begin{DoxyReturn}{Returns}
+The number of words. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cinder_1_1_c_f_s_file_a248ff0064897d6c4bbe5e1da3a8e10f8}\label{class_cinder_1_1_c_f_s_file_a248ff0064897d6c4bbe5e1da3a8e10f8}} 
+\index{Cinder::CFSFile@{Cinder::CFSFile}!IsFileEmpty@{IsFileEmpty}}
+\index{IsFileEmpty@{IsFileEmpty}!Cinder::CFSFile@{Cinder::CFSFile}}
+\doxysubsubsection{\texorpdfstring{IsFileEmpty()}{IsFileEmpty()}}
+{\footnotesize\ttfamily bool Cinder\+::\+CFSFile\+::\+Is\+File\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Checks if the file is empty.
+
+\begin{DoxyReturn}{Returns}
+True or false if file is empty or not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cinder_1_1_c_f_s_file_aaed4db0550ca49012605b5d237a780f1}\label{class_cinder_1_1_c_f_s_file_aaed4db0550ca49012605b5d237a780f1}} 
+\index{Cinder::CFSFile@{Cinder::CFSFile}!IsReadLocationToEnd@{IsReadLocationToEnd}}
+\index{IsReadLocationToEnd@{IsReadLocationToEnd}!Cinder::CFSFile@{Cinder::CFSFile}}
+\doxysubsubsection{\texorpdfstring{IsReadLocationToEnd()}{IsReadLocationToEnd()}}
+{\footnotesize\ttfamily bool Cinder\+::\+CFSFile\+::\+Is\+Read\+Location\+To\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Check if the read pointer = -\/1.
+
+\begin{DoxyReturn}{Returns}
+true or false for reaching -\/1 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cinder_1_1_c_f_s_file_a7eda049dd4fdfc285f24a26d5fbd990d}\label{class_cinder_1_1_c_f_s_file_a7eda049dd4fdfc285f24a26d5fbd990d}} 
+\index{Cinder::CFSFile@{Cinder::CFSFile}!Open@{Open}}
+\index{Open@{Open}!Cinder::CFSFile@{Cinder::CFSFile}}
+\doxysubsubsection{\texorpdfstring{Open()}{Open()}}
+{\footnotesize\ttfamily void Cinder\+::\+CFSFile\+::\+Open (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Open the file for use. \mbox{\Hypertarget{class_cinder_1_1_c_f_s_file_a862c46a2b928691eea27caf420b3e2c9}\label{class_cinder_1_1_c_f_s_file_a862c46a2b928691eea27caf420b3e2c9}} 
+\index{Cinder::CFSFile@{Cinder::CFSFile}!operator=@{operator=}}
+\index{operator=@{operator=}!Cinder::CFSFile@{Cinder::CFSFile}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily void Cinder\+::\+CFSFile\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_cinder_1_1_c_f_s_file}{CFSFile}} \&}]{file }\end{DoxyParamCaption})}
+
+Equal operator.
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & source for \mbox{\hyperlink{class_cinder_1_1_c_f_s_file}{CFSFile}} to use. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cinder_1_1_c_f_s_file_a9726ddd938ec776fc16c97acf1b0a8a2}\label{class_cinder_1_1_c_f_s_file_a9726ddd938ec776fc16c97acf1b0a8a2}} 
+\index{Cinder::CFSFile@{Cinder::CFSFile}!ReadFile@{ReadFile}}
+\index{ReadFile@{ReadFile}!Cinder::CFSFile@{Cinder::CFSFile}}
+\doxysubsubsection{\texorpdfstring{ReadFile()}{ReadFile()}}
+{\footnotesize\ttfamily std\+::string Cinder\+::\+CFSFile\+::\+Read\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Reads the entire file.
+
+\begin{DoxyReturn}{Returns}
+The whole file in a string format. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cinder_1_1_c_f_s_file_ae4bb6ea4ad0800cf84bff8a2c418d202}\label{class_cinder_1_1_c_f_s_file_ae4bb6ea4ad0800cf84bff8a2c418d202}} 
+\index{Cinder::CFSFile@{Cinder::CFSFile}!ReadLine@{ReadLine}}
+\index{ReadLine@{ReadLine}!Cinder::CFSFile@{Cinder::CFSFile}}
+\doxysubsubsection{\texorpdfstring{ReadLine()}{ReadLine()}}
+{\footnotesize\ttfamily std\+::string Cinder\+::\+CFSFile\+::\+Read\+Line (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{line\+\_\+number }\end{DoxyParamCaption})}
+
+Will read a specific line.
+
+
+\begin{DoxyParams}{Parameters}
+{\em The} & line that wants to be read starting at 0.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The line a string format. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cinder_1_1_c_f_s_file_afc31f4710d672eb27d8eac4b720f005b}\label{class_cinder_1_1_c_f_s_file_afc31f4710d672eb27d8eac4b720f005b}} 
+\index{Cinder::CFSFile@{Cinder::CFSFile}!ReadObjectOfSize@{ReadObjectOfSize}}
+\index{ReadObjectOfSize@{ReadObjectOfSize}!Cinder::CFSFile@{Cinder::CFSFile}}
+\doxysubsubsection{\texorpdfstring{ReadObjectOfSize()}{ReadObjectOfSize()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Cinder\+::\+CFSFile\+::\+Read\+Object\+Of\+Size (\begin{DoxyParamCaption}\item[{T \&}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Will read in an object using\textquotesingle{}s it\textquotesingle{}s size according to the read location.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Object} & that will be filled. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cinder_1_1_c_f_s_file_a4587b4f1b333c8fc5abd87c880055478}\label{class_cinder_1_1_c_f_s_file_a4587b4f1b333c8fc5abd87c880055478}} 
+\index{Cinder::CFSFile@{Cinder::CFSFile}!ReadWord@{ReadWord}}
+\index{ReadWord@{ReadWord}!Cinder::CFSFile@{Cinder::CFSFile}}
+\doxysubsubsection{\texorpdfstring{ReadWord()}{ReadWord()}}
+{\footnotesize\ttfamily std\+::string Cinder\+::\+CFSFile\+::\+Read\+Word (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{location }\end{DoxyParamCaption})}
+
+Will read a word according to the location.
+
+
+\begin{DoxyParams}{Parameters}
+{\em The} & location of the word in the file starting at 0.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The word in a string. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cinder_1_1_c_f_s_file_a0593cfbc5d7397442e17d850171dfb04}\label{class_cinder_1_1_c_f_s_file_a0593cfbc5d7397442e17d850171dfb04}} 
+\index{Cinder::CFSFile@{Cinder::CFSFile}!ResetReadLocation@{ResetReadLocation}}
+\index{ResetReadLocation@{ResetReadLocation}!Cinder::CFSFile@{Cinder::CFSFile}}
+\doxysubsubsection{\texorpdfstring{ResetReadLocation()}{ResetReadLocation()}}
+{\footnotesize\ttfamily void Cinder\+::\+CFSFile\+::\+Reset\+Read\+Location (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Will set the read location back to the top of the file. \mbox{\Hypertarget{class_cinder_1_1_c_f_s_file_ac3a5cd674ee181623c8f910fa1d5112b}\label{class_cinder_1_1_c_f_s_file_ac3a5cd674ee181623c8f910fa1d5112b}} 
+\index{Cinder::CFSFile@{Cinder::CFSFile}!SetReadLocation@{SetReadLocation}}
+\index{SetReadLocation@{SetReadLocation}!Cinder::CFSFile@{Cinder::CFSFile}}
+\doxysubsubsection{\texorpdfstring{SetReadLocation()}{SetReadLocation()}}
+{\footnotesize\ttfamily void Cinder\+::\+CFSFile\+::\+Set\+Read\+Location (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{read\+\_\+location }\end{DoxyParamCaption})}
+
+Can set the read location.
+
+
+\begin{DoxyParams}{Parameters}
+{\em The} & desired read location. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cinder_1_1_c_f_s_file_ab5b768391cee47769c834498772eae64}\label{class_cinder_1_1_c_f_s_file_ab5b768391cee47769c834498772eae64}} 
+\index{Cinder::CFSFile@{Cinder::CFSFile}!Write@{Write}}
+\index{Write@{Write}!Cinder::CFSFile@{Cinder::CFSFile}}
+\doxysubsubsection{\texorpdfstring{Write()}{Write()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Cinder\+::\+CFSFile\+::\+Write (\begin{DoxyParamCaption}\item[{const T \&}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Simple write function that will take information and write at end of the line.
+
+
+\begin{DoxyParams}{Parameters}
+{\em The} & information that will be written. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cinder_1_1_c_f_s_file_ab91409bb29eed6442bf5fee203a57472}\label{class_cinder_1_1_c_f_s_file_ab91409bb29eed6442bf5fee203a57472}} 
+\index{Cinder::CFSFile@{Cinder::CFSFile}!WriteAfterFirstWord@{WriteAfterFirstWord}}
+\index{WriteAfterFirstWord@{WriteAfterFirstWord}!Cinder::CFSFile@{Cinder::CFSFile}}
+\doxysubsubsection{\texorpdfstring{WriteAfterFirstWord()}{WriteAfterFirstWord()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Cinder\+::\+CFSFile\+::\+Write\+After\+First\+Word (\begin{DoxyParamCaption}\item[{const T \&}]{stream,  }\item[{const std\+::string \&}]{finder\+\_\+word }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Find the first word then write the information after it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em The} & information to write after the word. \\
+\hline
+{\em The} & word that will be found to write the information. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cinder_1_1_c_f_s_file_a482b4e12f40880d863686897dd4077b9}\label{class_cinder_1_1_c_f_s_file_a482b4e12f40880d863686897dd4077b9}} 
+\index{Cinder::CFSFile@{Cinder::CFSFile}!WriteAtEndLine@{WriteAtEndLine}}
+\index{WriteAtEndLine@{WriteAtEndLine}!Cinder::CFSFile@{Cinder::CFSFile}}
+\doxysubsubsection{\texorpdfstring{WriteAtEndLine()}{WriteAtEndLine()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Cinder\+::\+CFSFile\+::\+Write\+At\+End\+Line (\begin{DoxyParamCaption}\item[{const T \&}]{stream,  }\item[{const uint32\+\_\+t}]{line\+\_\+number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Will write information at the end of a given line.
+
+
+\begin{DoxyParams}{Parameters}
+{\em The} & informartion to be written. \\
+\hline
+{\em The} & line number. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cinder_1_1_c_f_s_file_ac89f7096b84e789cbec95a493b8ae839}\label{class_cinder_1_1_c_f_s_file_ac89f7096b84e789cbec95a493b8ae839}} 
+\index{Cinder::CFSFile@{Cinder::CFSFile}!WriteObjectOfSize@{WriteObjectOfSize}}
+\index{WriteObjectOfSize@{WriteObjectOfSize}!Cinder::CFSFile@{Cinder::CFSFile}}
+\doxysubsubsection{\texorpdfstring{WriteObjectOfSize()}{WriteObjectOfSize()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Cinder\+::\+CFSFile\+::\+Write\+Object\+Of\+Size (\begin{DoxyParamCaption}\item[{T \&}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Will write in the object passed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em The} & object going into the file. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/stra2/source/repos/\+Cinder\+File\+System/\+Cinder\+File\+System/src/CFSFile.\+h\item 
+C\+:/\+Users/stra2/source/repos/\+Cinder\+File\+System/\+Cinder\+File\+System/src/CFSFile.\+cpp\end{DoxyCompactItemize}
